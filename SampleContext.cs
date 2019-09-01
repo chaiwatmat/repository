@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-namespace SampleRepository {
+namespace SampleRepository
+{
     public class SampleContext : DbContext { }
 }
