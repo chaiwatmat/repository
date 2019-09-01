@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SampleRepository {
     public class UnitOfWork : IUnitOfWork {
-        private DbContext _context;
+        private SampleContext _context;
 
-        public UnitOfWork(DbContext context) {
+        public UnitOfWork(SampleContext context) {
             _context = context;
             User = new UserRepository(_context);
         }

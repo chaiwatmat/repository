@@ -7,14 +7,14 @@ using Microsoft.EntityFrameworkCore;
 namespace SampleRepository {
     public class UserRepository : Repository<User>, IUserRepository {
 
-        public UserRepository(DbContext context) : base(context) { }
+        public UserRepository(SampleContext context) : base(context) { }
 
         public IEnumerable<User> GetAllEnable() {
             return Context.Set<User>().Where(u => u.Enabled).ToList();
         }
 
-        // public SampleContext SampleContext {
-        //     get { return context as SampleContext; }
-        // }
+        public SampleContext SampleContext {
+            get { return Context as SampleContext; }
+        }
     }
 }
