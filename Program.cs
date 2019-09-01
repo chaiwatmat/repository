@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Repository {
+namespace SampleRepository {
     class Program {
         static void Main(string[] args) {
             Console.WriteLine("Hello World!");
