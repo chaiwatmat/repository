@@ -5,11 +5,11 @@ using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
 namespace SampleRepository {
-    public class Repositry<TModel> : IRepository<TModel> where TModel : class {
+    public class Repository<TModel> : IRepository<TModel> where TModel : class {
 
         protected readonly DbContext Context;
 
-        public Repositry(DbContext dbContext) {
+        public Repository(DbContext dbContext) {
             Context = dbContext;
         }
 
