@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-namespace SampleRpository {
+namespace SampleRepository {
     public class Repositry<TModel> : IRepository<TModel> where TModel : class {
 
         protected readonly DbContext Context;

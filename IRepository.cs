@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace SampleRpository {
+namespace SampleRepository {
     public interface IRepository<TModel> where TModel : class {
         TModel Get(int id);
         IEnumerable<TModel> GetAll();
